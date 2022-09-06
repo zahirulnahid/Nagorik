@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html>
+<title>Home | Nagorik</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="D:\Nagorik\style.css">
+
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.ngrk-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="ngrk-top">
+  <div class="ngrk-bar ngrk-red ngrk-card ngrk-left-align ngrk-large">
+    <a class="ngrk-bar-item ngrk-button ngrk-hide-medium ngrk-hide-large ngrk-right ngrk-padding-large ngrk-hover-white ngrk-large ngrk-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="D:\Nagorik\page01.html" class="ngrk-bar-item ngrk-button ngrk-hide-small ngrk-padding-large ngrk-hover-white">হোম</a>
+    <a href="D:\Nagorik\page02.html" class="ngrk-bar-item ngrk-button ngrk-hide-small ngrk-padding-large ngrk-hover-white">বাস রুট</a>
+    <a href="D:\Nagorik\page03.html" class="ngrk-bar-item ngrk-button ngrk-hide-small ngrk-padding-large ngrk-hover-white">রক্ত</a>
+    <a href="D:\Nagorik\page04.html" class="ngrk-bar-item ngrk-button ngrk-padding-large ngrk-white">ইমারজেন্সি</a>
+    <right><a href="D:\Nagorik\page05.html" class="ngrk-bar-item ngrk-button ngrk-hide-small ngrk-padding-large ngrk-hover-white">আমাদের সম্পর্কে</a></right>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="ngrk-bar-block ngrk-white ngrk-hide ngrk-hide-large ngrk-hide-medium ngrk-large">
+       <a href="#" class="ngrk-bar-item ngrk-button ngrk-hide-small ngrk-padding-large ngrk-hover-white">হোম</a>
+    <a href="#" class="ngrk-bar-item ngrk-button ngrk-hide-small ngrk-padding-large ngrk-hover-white">বাস রুট</a>
+    <a href="#" class="ngrk-bar-item ngrk-button ngrk-hide-small ngrk-padding-large ngrk-hover-white">রক্ত</a>
+    <a href="#" class="ngrk-bar-item ngrk-button ngrk-hide-small ngrk-padding-large ngrk-hover-white">ইমারজেন্সি</a>
+    <right><a href="#" class="ngrk-bar-item ngrk-button ngrk-hide-small ngrk-padding-large ngrk-hover-white">আমাদের সম্পর্কে</a></right>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="ngrk-container ngrk-red ngrk-center" style="padding:38px 16px">
+  <h1 class="ngrk-margin w3-jumbo">ইমারজেন্সি সেবা</h1>
+</header>
+<style>
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+
+</style>
+<center>
+<table class="ngrk-table">
+<tr>
+<td>
+<p><a href="D:\Nagorik\es\missing.html"><center><img src="D:\Nagorik\IMG\es\missing.png" height="100" width="100""><p>নিখোঁজ</p></a></p></center></td><td>
+<p><a href="D:\Nagorik\es\oc.html"><center><img src="D:\Nagorik\IMG\es\dmp.png" height="100" width="100"><p>ডিএমপি নাম্বার</a></p></center></td><td>
+<p><a href="tel:999"><center><img src="D:\Nagorik\IMG\es\999.jpg" height="100" width="100""><p>৯৯৯ ইমার্জেন্সি </a></p></center></td><td>
+<p><a href="tel:109"><center><img src="D:\Nagorik\IMG\es\womenchildabouse.jpg" height="100" width="100""><p>১০৯ নারী ও শিশু নির্যাতন </a></p></center></td>
+</tr>
+</table>
+</center>
+
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("ngrk-show") == -1) {
+        x.className += " ngrk-show";
+    } else { 
+        x.className = x.className.replace(" ngrk-show", "");
+    }
+}
+</script>
+
+</body>
+</html>

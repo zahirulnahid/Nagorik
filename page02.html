@@ -1,0 +1,125 @@
+﻿<!DOCTYPE html>
+<html>
+<title>বাসের রুট | Nagorik</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="D:\Nagorik\style.css">
+
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.ngrk-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+</style>
+
+
+<style>
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+</style>
+
+
+<body>
+
+<!-- Navbar -->
+<div class="ngrk-top">
+  <div class="ngrk-bar ngrk-red ngrk-card ngrk-left-align ngrk-large">
+    <a class="ngrk-bar-item ngrk-button ngrk-hide-medium ngrk-hide-large ngrk-right ngrk-padding-large ngrk-hover-white ngrk-large ngrk-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="D:\Nagorik\page01.html" class="ngrk-bar-item ngrk-button ngrk-hide-small ngrk-padding-large ngrk-hover-white">হোম</a>
+    <a href="D:\Nagorik\page02.html" class="ngrk-bar-item ngrk-button ngrk-padding-large ngrk-white">বাস রুট</a>
+    <a href="D:\Nagorik\page03.html" class="ngrk-bar-item ngrk-button ngrk-hide-small ngrk-padding-large ngrk-hover-white">রক্ত</a>
+    <a href="D:\Nagorik\page04.html" class="ngrk-bar-item ngrk-button ngrk-hide-small ngrk-padding-large ngrk-hover-white">ইমারজেন্সি</a>
+    <right><a href="D:\Nagorik\page05.html" class="ngrk-bar-item ngrk-button ngrk-hide-small ngrk-padding-large ngrk-hover-white">আমাদের সম্পর্কে</a></right>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="ngrk-bar-block ngrk-white ngrk-hide ngrk-hide-large ngrk-hide-medium ngrk-large">
+       <a href="#" class="ngrk-bar-item ngrk-button ngrk-hide-small ngrk-padding-large ngrk-hover-white">হোম</a>
+    <a href="#" class="ngrk-bar-item ngrk-button ngrk-hide-small ngrk-padding-large ngrk-hover-white">বাস রুট</a>
+    <a href="#" class="ngrk-bar-item ngrk-button ngrk-hide-small ngrk-padding-large ngrk-hover-white">রক্ত</a>
+    <a href="#" class="ngrk-bar-item ngrk-button ngrk-hide-small ngrk-padding-large ngrk-hover-white">ইমারজেন্সি</a>
+    <right><a href="#" class="ngrk-bar-item ngrk-button ngrk-hide-small ngrk-padding-large ngrk-hover-white">আমাদের সম্পর্কে</a></right>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="ngrk-container ngrk-purple ngrk-center" style="padding:128px 16px">
+  <h1 class="ngrk-margin ngrk-jumbo">ঢাকার বাস রুট</h1>
+  <p class="ngrk-xlarge"> যাত্রা যেখান থেকে শুরু করবেন </p>
+  <div class="dropdown">
+  <button class="dropbtn">যাত্রা শুরু</button>
+  <div class="dropdown-content">
+  <table> <tr> 
+
+<td>
+    <a href="D:\Nagorik\SP\rayerbag.html">রায়েরবাগ</a>
+    <a href="D:\Nagorik\SP\shanirakhra.html">শনির আখড়া</a></td>
+<td>
+    <a href="D:\Nagorik\SP\jatrabari.html">যাত্রাবাড়ি</a>
+    <a href="D:\Nagorik\SP\khilgaon.html">গুলিস্তান</a
+</td>
+<td>
+    <a href="D:\Nagorik\SP\khilgaon.html">খিলগাঁও</a>
+    <a href="D:\Nagorik\SP\motijhil.html">মতিঝিল</a>
+       </td>
+<td> <a href="D:\Nagorik\SP\shahbag.html">শাহবাগ</a>
+    <a href="D:\Nagorik\SP\farmgate.html">ফার্মগেইট</a></td>
+<td>
+    <a href="D:\Nagorik\SP\shymoli.html">শ্যামলী</a> 
+    <a href="D:\Nagorik\SP\mirpur.html">মিরপুর</a></td>
+</tr>
+</table> 
+ </div>
+</div>
+</header>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("ngrk-show") == -1) {
+        x.className += " ngrk-show";
+    } else { 
+        x.className = x.className.replace(" ngrk-show", "");
+    }
+}
+</script>
+
+</body>
+</html>
